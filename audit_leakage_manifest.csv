@@ -1,0 +1,262 @@
+test_image,nearest_match,match_split,dhash_distance,same_class,byte_identical_dup
+test/potato_fungi/Copy of 20230712_154218.jpg,train/potato_fungi/20230712_154218.jpg,train,0,TRUE,TRUE
+test/potato_fungi/IMG_20230816_122345~2 (2).jpg,val/potato_fungi/IMG_20230816_122345~2.jpg,val,0,TRUE,TRUE
+test/rice_blast/102334.jpg,train/rice_blast/102705.jpg,train,0,TRUE,TRUE
+test/rice_blast/IMG20201109200100_00.jpg,train/rice_blast/IMG20201109200133_00.jpg,train,0,TRUE,FALSE
+test/rice_blast/IMG_20231018_143805 - Copy.jpg,train/rice_blast/IMG_20231018_143805.jpg,train,0,TRUE,TRUE
+test/rice_blast/IMG_20231018_143815.jpg,train/rice_blast/IMG_20231018_143815 - Copy.jpg,train,0,TRUE,TRUE
+test/rice_blast/IMG_20231018_143818_1 - Copy.jpg,train/rice_blast/IMG_20231018_143818_1.jpg,train,0,TRUE,TRUE
+test/rice_blast/IMG_20231018_143820 - Copy.jpg,train/rice_blast/IMG_20231018_143820.jpg,train,0,TRUE,TRUE
+test/rice_blast/IMG_20231018_143839.jpg,train/rice_blast/IMG_20231018_143839 - Copy.jpg,train,0,TRUE,TRUE
+test/rice_blast/IMG_20231018_143920.jpg,train/rice_blast/IMG_20231018_143920 - Copy.jpg,train,0,TRUE,TRUE
+test/rice_blast/RB_120.jpg,train/rice_tungro_virus/RT_103.jpg,train,0,FALSE,FALSE
+test/rice_blast/RB_98.jpg,val/rice_tungro_virus/RT_175.jpg,val,0,FALSE,FALSE
+test/rice_blast/mehedi (4).jpg,val/rice_blast/mehedi (2).jpg,val,0,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (133).jpg,train/rice_brown_spot/Brown_spot (134).jpg,train,0,TRUE,TRUE
+test/rice_brown_spot/Brown_spot (36).jpg,val/rice_brown_spot/Brown_spot (35).jpg,val,0,TRUE,FALSE
+test/rice_brown_spot/IMG_20231018_143709.jpg,train/rice_brown_spot/IMG_20231018_143709 - Copy.jpg,train,0,TRUE,TRUE
+test/rice_brown_spot/IMG_20231018_143711 - Copy.jpg,train/rice_brown_spot/IMG_20231018_143711.jpg,train,0,TRUE,TRUE
+test/rice_brown_spot/IMG_20231018_143712 - Copy.jpg,train/rice_brown_spot/IMG_20231018_143712.jpg,train,0,TRUE,TRUE
+test/rice_brown_spot/IMG_20231018_143713 - Copy.jpg,train/rice_brown_spot/IMG_20231018_143713.jpg,train,0,TRUE,TRUE
+test/rice_healthy/20241114_143613.jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,0,TRUE,FALSE
+test/rice_healthy/Healthy_rice_leaf (36).jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,0,TRUE,FALSE
+test/rice_healthy/Healthy_rice_leaf (52).jpg,train/rice_healthy/Healthy_rice_leaf (53).jpg,train,0,TRUE,FALSE
+test/rice_sheath_blight/20241114_160951.jpg,train/rice_sheath_blight/20241114_160950.jpg,train,0,TRUE,FALSE
+test/rice_sheath_blight/20241114_161639.jpg,train/rice_sheath_blight/20241114_161635.jpg,train,0,TRUE,FALSE
+test/rice_sheath_blight/20241114_161826.jpg,val/rice_sheath_blight/20241114_161827.jpg,val,0,TRUE,FALSE
+test/rice_sheath_blight/20241114_161943.jpg,train/rice_sheath_blight/20241114_161938.jpg,train,0,TRUE,FALSE
+test/rice_sheath_blight/20241114_162040.jpg,train/rice_sheath_blight/20241114_162039.jpg,train,0,TRUE,FALSE
+test/rice_sheath_blight/IMG_20231006_163217 - Copy.jpg,train/rice_sheath_blight/IMG_20231006_163217.jpg,train,0,TRUE,TRUE
+test/rice_tungro_virus/20241114_150718.jpg,train/rice_tungro_virus/20241114_150717.jpg,train,0,TRUE,FALSE
+test/rice_tungro_virus/20241114_150733.jpg,train/rice_tungro_virus/20241114_150732.jpg,train,0,TRUE,FALSE
+test/rice_tungro_virus/20241114_150734.jpg,train/rice_tungro_virus/20241114_150730.jpg,train,0,TRUE,FALSE
+test/rice_tungro_virus/20241114_150737.jpg,train/rice_tungro_virus/20241114_150730.jpg,train,0,TRUE,FALSE
+test/rice_tungro_virus/RT_112.jpg,train/rice_blast/RB_112.jpg,train,0,FALSE,FALSE
+test/rice_tungro_virus/RT_226.jpg,train/rice_tungro_virus/RT_181.jpg,train,0,TRUE,FALSE
+test/rice_tungro_virus/RT_234.jpg,train/rice_blast/IMG20201109200309_00.jpg,train,0,FALSE,FALSE
+test/rice_tungro_virus/RT_238.jpg,train/rice_blast/RB_127.jpg,train,0,FALSE,FALSE
+test/wheat_black_point/BlackPoint_282.jpg,train/wheat_black_point/BlackPoint_281.jpg,train,0,TRUE,FALSE
+test/wheat_blast/WheatBlast_178.jpg,train/wheat_blast/WheatBlast_179.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_18.jpg,train/wheat_blast/WheatBlast_17.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_201.jpg,train/wheat_blast/WheatBlast_202.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_208.jpg,train/wheat_blast/WheatBlast_206.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_263.jpg,train/wheat_blast/WheatBlast_262.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_288.jpg,train/wheat_blast/WheatBlast_286.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_301.jpg,train/wheat_blast/WheatBlast_302.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_307.jpg,val/wheat_blast/WheatBlast_308.jpg,val,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_341.jpg,train/wheat_blast/WheatBlast_340.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_35.jpg,train/wheat_blast/WheatBlast_33.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_356.jpg,val/wheat_blast/WheatBlast_357.jpg,val,0,TRUE,FALSE
+test/wheat_blast/WheatBlast_98.jpg,train/wheat_blast/WheatBlast_96.jpg,train,0,TRUE,TRUE
+test/wheat_blast/WheatBlast_99.jpg,train/wheat_blast/WheatBlast_100.jpg,train,0,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_159.jpg,val/wheat_leaf_blight/LeafBlight_160.jpg,val,0,TRUE,TRUE
+test/wheat_leaf_blight/LeafBlight_185.jpg,train/wheat_leaf_blight/LeafBlight_184.jpg,train,0,TRUE,TRUE
+test/wheat_leaf_blight/LeafBlight_188.jpg,train/wheat_leaf_blight/LeafBlight_189.jpg,train,0,TRUE,TRUE
+test/wheat_leaf_blight/LeafBlight_35.jpg,train/wheat_leaf_blight/LeafBlight_36.jpg,train,0,TRUE,TRUE
+test/wheat_leaf_blight/LeafBlight_40.jpg,train/wheat_leaf_blight/LeafBlight_39.jpg,train,0,TRUE,TRUE
+test/wheat_leaf_blight/LeafBlight_55.jpg,train/wheat_leaf_blight/LeafBlight_56.jpg,train,0,TRUE,TRUE
+test/potato_fungi/20230712_153943.jpg,val/potato_fungi/20230712_153941.jpg,val,1,TRUE,FALSE
+test/potato_healthy/Healthy (414).jpg,train/potato_healthy/Healthy (415).jpg,train,1,TRUE,FALSE
+test/rice_blast/IMG20201109195654_00.jpg,train/rice_blast/IMG20201109195655_00.jpg,train,1,TRUE,FALSE
+test/rice_blast/IMG20201109195843_00.jpg,val/rice_blast/IMG20201109195859_00.jpg,val,1,TRUE,FALSE
+test/rice_blast/IMG20201109200114_00.jpg,train/rice_blast/IMG20201109200111_00.jpg,train,1,TRUE,FALSE
+test/rice_blast/IMG20201109200138_00.jpg,train/rice_blast/IMG20201109200102_00.jpg,train,1,TRUE,FALSE
+test/rice_blast/IMG20201109200227_00.jpg,train/rice_blast/IMG20201109200235_00.jpg,train,1,TRUE,FALSE
+test/rice_blast/IMG20201109200651_00.jpg,train/rice_blast/IMG20201109200133_00.jpg,train,1,TRUE,FALSE
+test/rice_blast/IMG_20231018_143548.jpg,val/rice_blast/IMG_20231018_143546.jpg,val,1,TRUE,FALSE
+test/rice_blast/IMG_20231018_143752_1.jpg,train/rice_blast/IMG_20231018_143752.jpg,train,1,TRUE,FALSE
+test/rice_blast/RB_117.jpg,train/rice_tungro_virus/RT_75.jpg,train,1,FALSE,FALSE
+test/rice_brown_spot/20231006_165616.jpg,train/rice_brown_spot/20231006_165615.jpg,train,1,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (22).jpg,train/rice_brown_spot/Brown_spot (21).jpg,train,1,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (48).jpg,train/rice_brown_spot/Brown_spot (47).jpg,train,1,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (75).jpg,train/rice_brown_spot/Brown_spot (77).jpg,train,1,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (89).jpg,train/rice_brown_spot/Brown_spot (90).jpg,train,1,TRUE,FALSE
+test/rice_healthy/Healthy_rice_leaf (29).jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,1,TRUE,FALSE
+test/rice_sheath_blight/20241114_160018.jpg,train/rice_sheath_blight/20241114_160019.jpg,train,1,TRUE,FALSE
+test/rice_sheath_blight/20241114_160942.jpg,train/rice_sheath_blight/20241114_160948.jpg,train,1,TRUE,FALSE
+test/rice_sheath_blight/20241114_161012.jpg,train/rice_sheath_blight/20241114_161010.jpg,train,1,TRUE,FALSE
+test/rice_sheath_blight/20241114_161308.jpg,val/rice_sheath_blight/20241114_161306.jpg,val,1,TRUE,FALSE
+test/rice_sheath_blight/20241114_161925.jpg,val/rice_sheath_blight/20241114_161926.jpg,val,1,TRUE,FALSE
+test/rice_sheath_blight/20241114_162044.jpg,train/rice_sheath_blight/20241114_162042.jpg,train,1,TRUE,FALSE
+test/rice_sheath_blight/IMG_20231014_173414.jpg,train/rice_sheath_blight/IMG_20231014_173413_1.jpg,train,1,TRUE,FALSE
+test/rice_sheath_blight/Sheath_Blight (5).jpg,train/rice_sheath_blight/Sheath_Blight (6).jpg,train,1,TRUE,FALSE
+test/rice_tungro_virus/RT_138.jpg,train/rice_tungro_virus/RT_236.jpg,train,1,TRUE,FALSE
+test/rice_tungro_virus/RT_174.jpg,train/rice_blast/IMG20201109200111_00.jpg,train,1,FALSE,FALSE
+test/rice_tungro_virus/RT_187.jpg,train/rice_tungro_virus/RT_115.jpg,train,1,TRUE,FALSE
+test/rice_tungro_virus/RT_194.jpg,train/rice_tungro_virus/RT_58.jpg,train,1,TRUE,FALSE
+test/rice_tungro_virus/RT_202.jpg,train/rice_tungro_virus/RT_164.jpg,train,1,TRUE,FALSE
+test/rice_tungro_virus/RT_50.jpg,train/rice_tungro_virus/RT_218.jpg,train,1,TRUE,FALSE
+test/rice_tungro_virus/RT_51.jpg,train/rice_blast/RB_132.jpg,train,1,FALSE,FALSE
+test/wheat_black_point/BlackPoint_261.jpg,train/wheat_black_point/BlackPoint_262.jpg,train,1,TRUE,FALSE
+test/wheat_black_point/BlackPoint_283.jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,1,FALSE,FALSE
+test/wheat_blast/WheatBlast_10.jpg,val/wheat_blast/WheatBlast_11.jpg,val,1,TRUE,FALSE
+test/wheat_blast/WheatBlast_22.jpg,train/wheat_blast/WheatBlast_23.jpg,train,1,TRUE,FALSE
+test/wheat_blast/WheatBlast_373.jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,1,FALSE,FALSE
+test/wheat_blast/WheatBlast_61.jpg,val/wheat_blast/WheatBlast_66.jpg,val,1,TRUE,FALSE
+test/wheat_blast/WheatBlast_65.jpg,train/wheat_blast/WheatBlast_63.jpg,train,1,TRUE,FALSE
+test/wheat_fusarium_foot_rot/FusariumFootRot_14.jpg,train/wheat_fusarium_foot_rot/FusariumFootRot_15.jpg,train,1,TRUE,FALSE
+test/wheat_healthy/HealthyLeaf_103.jpg,val/wheat_healthy/HealthyLeaf_102.jpg,val,1,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_316.jpg,train/wheat_leaf_blight/LeafBlight_315.jpg,train,1,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_319.jpg,val/wheat_leaf_blight/LeafBlight_320.jpg,val,1,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_34.jpg,train/wheat_leaf_blight/LeafBlight_33.jpg,train,1,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_353.jpg,train/wheat_leaf_blight/LeafBlight_354.jpg,train,1,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_65.jpg,val/wheat_leaf_blight/LeafBlight_63.jpg,val,1,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_79.jpg,train/wheat_leaf_blight/LeafBlight_83.jpg,train,1,TRUE,FALSE
+test/potato_bacteria/IMG_1165.JPG,train/potato_bacteria/IMG_1166.JPG,train,2,TRUE,FALSE
+test/rice_blast/100345.jpg,train/rice_blast/100245.jpg,train,2,TRUE,FALSE
+test/rice_blast/102146.jpg,val/rice_blast/101981.jpg,val,2,TRUE,FALSE
+test/rice_blast/103144.jpg,train/rice_blast/102743.jpg,train,2,TRUE,FALSE
+test/rice_blast/IMG20201109200523_00.jpg,train/rice_blast/IMG20201109200528_00.jpg,train,2,TRUE,FALSE
+test/rice_blast/IMG20201109200535_00.jpg,train/rice_blast/IMG20201109200500_00.jpg,train,2,TRUE,FALSE
+test/rice_blast/IMG20201109200548_00.jpg,train/rice_blast/IMG20201109200551_00.jpg,train,2,TRUE,FALSE
+test/rice_blast/IMG_20231018_143357.jpg,train/rice_blast/IMG_20231018_143358.jpg,train,2,TRUE,FALSE
+test/rice_blast/IMG_20231018_143739.jpg,train/rice_blast/IMG_20231018_143805.jpg,train,2,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (18).jpg,val/rice_brown_spot/Brown_spot (20).jpg,val,2,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (42).jpg,train/rice_brown_spot/Brown_spot (40).jpg,train,2,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (62).jpg,train/rice_brown_spot/Brown_spot (60).jpg,train,2,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (73).jpg,train/rice_brown_spot/Brown_spot (69).jpg,train,2,TRUE,FALSE
+test/rice_brown_spot/brownspot_orig_045.jpg,train/rice_sheath_blight/IMG_20241114_144734.jpg,train,2,FALSE,FALSE
+test/rice_healthy/Healthy_rice_leaf (45).jpg,train/rice_healthy/Healthy_rice_leaf (47).jpg,train,2,TRUE,FALSE
+test/rice_sheath_blight/20241114_160208.jpg,train/rice_sheath_blight/20241114_160210.jpg,train,2,TRUE,FALSE
+test/rice_sheath_blight/20241114_161228.jpg,train/rice_sheath_blight/20241114_161230.jpg,train,2,TRUE,FALSE
+test/rice_sheath_blight/20241114_162053.jpg,train/rice_sheath_blight/20241114_162057.jpg,train,2,TRUE,FALSE
+test/rice_sheath_blight/Sheath_Blight (140).jpg,train/rice_sheath_blight/Sheath_Blight (139).jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_129.jpg,train/rice_blast/RB_96.jpg,train,2,FALSE,FALSE
+test/rice_tungro_virus/RT_165.jpg,train/rice_tungro_virus/RT_164.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_184.jpg,train/rice_tungro_virus/RT_151.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_205.jpg,train/rice_tungro_virus/RT_180.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_53.jpg,train/rice_tungro_virus/RT_219.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_67.jpg,train/rice_tungro_virus/RT_183.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_84.jpg,train/rice_tungro_virus/RT_169.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_86.jpg,train/rice_tungro_virus/RT_170.jpg,train,2,TRUE,FALSE
+test/rice_tungro_virus/RT_91.jpg,train/rice_tungro_virus/RT_236.jpg,train,2,TRUE,FALSE
+test/wheat_black_point/BlackPoint_108.jpg,train/wheat_black_point/BlackPoint_109.jpg,train,2,TRUE,FALSE
+test/wheat_black_point/BlackPoint_178.jpg,train/wheat_black_point/BlackPoint_179.jpg,train,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_109.jpg,train/wheat_blast/WheatBlast_111.jpg,train,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_223.jpg,train/wheat_blast/WheatBlast_224.jpg,train,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_231.jpg,val/wheat_blast/WheatBlast_234.jpg,val,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_232.jpg,val/wheat_blast/WheatBlast_234.jpg,val,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_233.jpg,val/wheat_blast/WheatBlast_234.jpg,val,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_270.jpg,train/wheat_blast/WheatBlast_271.jpg,train,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_282.jpg,train/wheat_blast/WheatBlast_281.jpg,train,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_82.jpg,train/wheat_blast/WheatBlast_83.jpg,train,2,TRUE,FALSE
+test/wheat_blast/WheatBlast_84.jpg,train/wheat_blast/WheatBlast_76.jpg,train,2,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_256.jpg,train/wheat_leaf_blight/LeafBlight_255.jpg,train,2,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_297.jpg,train/wheat_leaf_blight/LeafBlight_296.jpg,train,2,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_299.jpg,val/wheat_leaf_blight/LeafBlight_298.jpg,val,2,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_46.jpg,train/wheat_leaf_blight/LeafBlight_36.jpg,train,2,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_92.jpg,val/wheat_leaf_blight/LeafBlight_91.jpg,val,2,TRUE,FALSE
+test/potato_bacteria/IMG_1177.JPG,train/potato_bacteria/IMG_1178.JPG,train,3,TRUE,FALSE
+test/potato_healthy/Healthy (476).jpg,train/potato_healthy/Healthy (479).jpg,train,3,TRUE,FALSE
+test/rice_blast/102223.jpg,train/rice_blast/102676.jpg,train,3,TRUE,FALSE
+test/rice_blast/IMG20201109200506_00.jpg,train/rice_blast/IMG20201109200511_00.jpg,train,3,TRUE,FALSE
+test/rice_blast/IMG_20231018_144342.jpg,val/rice_blast/IMG_20231018_144340_1.jpg,val,3,TRUE,FALSE
+test/rice_blast/RB_135.jpg,train/rice_tungro_virus/RT_217.jpg,train,3,FALSE,FALSE
+test/rice_brown_spot/20231006_165550.jpg,val/rice_brown_spot/20231006_165551.jpg,val,3,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (104).jpg,train/rice_brown_spot/Brown_spot (109).jpg,train,3,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (19).jpg,val/rice_brown_spot/Brown_spot (20).jpg,val,3,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (7).jpg,val/rice_brown_spot/Brown_spot (6).jpg,val,3,TRUE,FALSE
+test/rice_healthy/20231006_165518.jpg,val/rice_healthy/20231006_165517(0).jpg,val,3,TRUE,FALSE
+test/rice_sheath_blight/20241114_160020.jpg,train/rice_sheath_blight/20241114_160019.jpg,train,3,TRUE,FALSE
+test/rice_sheath_blight/20241114_161003.jpg,train/rice_sheath_blight/20241114_161002.jpg,train,3,TRUE,FALSE
+test/rice_sheath_blight/20241114_161204.jpg,train/rice_sheath_blight/20241114_155606.jpg,train,3,TRUE,FALSE
+test/rice_sheath_blight/20241114_161628.jpg,train/rice_sheath_blight/20241114_161630.jpg,train,3,TRUE,FALSE
+test/rice_sheath_blight/20241114_161922.jpg,train/rice_sheath_blight/20241114_161927.jpg,train,3,TRUE,FALSE
+test/wheat_black_point/BlackPoint_183.jpg,train/wheat_black_point/BlackPoint_226.jpg,train,3,TRUE,FALSE
+test/wheat_black_point/BlackPoint_85.jpg,train/wheat_black_point/BlackPoint_84.jpg,train,3,TRUE,FALSE
+test/wheat_black_point/BlackPoint_88.jpg,train/wheat_black_point/BlackPoint_87.jpg,train,3,TRUE,FALSE
+test/wheat_blast/WheatBlast_16.jpg,train/wheat_blast/WheatBlast_14.jpg,train,3,TRUE,FALSE
+test/wheat_blast/WheatBlast_165.jpg,train/wheat_blast/WheatBlast_164.jpg,train,3,TRUE,FALSE
+test/wheat_blast/WheatBlast_171.jpg,train/wheat_blast/WheatBlast_172.jpg,train,3,TRUE,FALSE
+test/wheat_blast/WheatBlast_261.jpg,train/wheat_blast/WheatBlast_264.jpg,train,3,TRUE,FALSE
+test/wheat_blast/WheatBlast_30.jpg,train/wheat_blast/WheatBlast_29.jpg,train,3,TRUE,FALSE
+test/wheat_healthy/HealthyLeaf_140.jpg,train/wheat_healthy/HealthyLeaf_139.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_140.jpg,train/wheat_leaf_blight/LeafBlight_144.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_145.jpg,train/wheat_leaf_blight/LeafBlight_147.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_24.jpg,train/wheat_leaf_blight/LeafBlight_23.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_345.jpg,train/wheat_leaf_blight/LeafBlight_344.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_361.jpg,train/wheat_leaf_blight/LeafBlight_363.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_366.jpg,train/wheat_leaf_blight/LeafBlight_365.jpg,train,3,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_51.jpg,train/wheat_leaf_blight/LeafBlight_56.jpg,train,3,TRUE,FALSE
+test/potato_bacteria/IMG_1211.JPG,val/rice_sheath_blight/20241114_160911.jpg,val,4,FALSE,FALSE
+test/potato_early_blight/56a6692b-15ba-4097-aba1-ba428b6fefcd___RS_Early.B 7899.JPG,val/rice_tungro_virus/RT_203.jpg,val,4,FALSE,FALSE
+test/potato_fungi/20230802_105548597.jpg,train/rice_tungro_virus/RT_56.jpg,train,4,FALSE,FALSE
+test/potato_fungi/IMG_0130.JPG,val/potato_fungi/IMG_0129.JPG,val,4,TRUE,FALSE
+test/potato_healthy/Healthy (365).jpg,val/potato_healthy/Healthy (364).jpg,val,4,TRUE,FALSE
+test/potato_late_blight/Late_Blight (495).jpg,val/potato_late_blight/Late_Blight (487).jpg,val,4,TRUE,FALSE
+test/potato_late_blight/Late_Blight (508).jpg,train/potato_healthy/Healthy (412).jpg,train,4,FALSE,FALSE
+test/rice_blast/101554.jpg,train/rice_blast/100556.jpg,train,4,TRUE,FALSE
+test/rice_blast/IMG20201109195646_00.jpg,train/rice_blast/IMG20201109195704_00.jpg,train,4,TRUE,FALSE
+test/rice_blast/IMG20201109200419_00.jpg,train/rice_blast/IMG20201109200422_00.jpg,train,4,TRUE,FALSE
+test/rice_blast/RB_147.jpg,train/rice_sheath_blight/20241114_161233.jpg,train,4,FALSE,FALSE
+test/rice_blast/RB_95.jpg,train/rice_tungro_virus/RT_133.jpg,train,4,FALSE,FALSE
+test/rice_brown_spot/Brown_spot (148).jpg,val/rice_brown_spot/Brown_spot (145).jpg,val,4,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (17).jpg,train/rice_brown_spot/Brown_spot (16).jpg,train,4,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (41).jpg,train/rice_brown_spot/Brown_spot (39).jpg,train,4,TRUE,FALSE
+test/rice_brown_spot/Brown_spot (51).jpg,train/rice_brown_spot/Brown_spot (52).jpg,train,4,TRUE,FALSE
+test/rice_healthy/Healthy_rice_leaf (180).jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,4,TRUE,FALSE
+test/rice_healthy/Healthy_rice_leaf (82).jpg,train/rice_healthy/Healthy_rice_leaf (176).jpg,train,4,TRUE,FALSE
+test/rice_sheath_blight/20241114_161234.jpg,train/rice_sheath_blight/20241114_161223.jpg,train,4,TRUE,FALSE
+test/rice_sheath_blight/20241114_161823.jpg,val/rice_sheath_blight/20241114_161827.jpg,val,4,TRUE,FALSE
+test/rice_sheath_blight/20241114_161905.jpg,train/rice_sheath_blight/20241114_161023.jpg,train,4,TRUE,FALSE
+test/rice_sheath_blight/20241114_161924.jpg,train/rice_healthy/Healthy_rice_leaf (34).jpg,train,4,FALSE,FALSE
+test/rice_sheath_blight/IMG_20231018_144301.jpg,train/rice_sheath_blight/IMG_20231018_144301_2.jpg,train,4,TRUE,FALSE
+test/rice_sheath_blight/IMG_20241114_150242.jpg,train/rice_sheath_blight/20241114_161127.jpg,train,4,TRUE,FALSE
+test/rice_tungro_virus/RT_135.jpg,val/rice_blast/RB_110.jpg,val,4,FALSE,FALSE
+test/rice_tungro_virus/RT_193.jpg,train/rice_tungro_virus/RT_87.jpg,train,4,TRUE,FALSE
+test/rice_tungro_virus/RT_213.jpg,train/rice_tungro_virus/RT_63.jpg,train,4,TRUE,FALSE
+test/rice_tungro_virus/RT_62.jpg,train/rice_blast/RB_136.jpg,train,4,FALSE,FALSE
+test/wheat_black_point/BlackPoint_187.jpg,train/rice_blast/RB_101.jpg,train,4,FALSE,FALSE
+test/wheat_black_point/BlackPoint_220.jpg,train/wheat_black_point/BlackPoint_221.jpg,train,4,TRUE,FALSE
+test/wheat_black_point/BlackPoint_266.jpg,train/wheat_black_point/BlackPoint_186.jpg,train,4,TRUE,FALSE
+test/wheat_black_point/BlackPoint_69.jpg,val/wheat_black_point/BlackPoint_70.jpg,val,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_139.jpg,train/wheat_blast/WheatBlast_141.jpg,train,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_140.jpg,train/wheat_blast/WheatBlast_141.jpg,train,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_144.jpg,train/wheat_blast/WheatBlast_143.jpg,train,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_25.jpg,train/wheat_blast/WheatBlast_23.jpg,train,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_253.jpg,train/wheat_blast/WheatBlast_255.jpg,train,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_254.jpg,train/wheat_blast/WheatBlast_255.jpg,train,4,TRUE,FALSE
+test/wheat_blast/WheatBlast_374.jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,4,FALSE,FALSE
+test/wheat_blast/WheatBlast_377.jpg,train/wheat_blast/WheatBlast_379.jpg,train,4,TRUE,FALSE
+test/wheat_healthy/HealthyLeaf_183.jpg,val/wheat_healthy/HealthyLeaf_182.jpg,val,4,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_101.jpg,train/wheat_leaf_blight/LeafBlight_100.jpg,train,4,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_105.jpg,train/wheat_leaf_blight/LeafBlight_107.jpg,train,4,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_16.jpg,train/wheat_leaf_blight/LeafBlight_15.jpg,train,4,TRUE,FALSE
+test/potato_healthy/Healthy (318).jpg,train/potato_healthy/Healthy (316).jpg,train,5,TRUE,FALSE
+test/potato_healthy/Healthy (321).jpg,train/potato_healthy/Healthy (320).jpg,train,5,TRUE,FALSE
+test/potato_healthy/Healthy (403).jpg,val/potato_late_blight/Late_Blight (460).jpg,val,5,FALSE,FALSE
+test/potato_healthy/Healthy (484).jpg,train/potato_healthy/Healthy (452).jpg,train,5,TRUE,FALSE
+test/potato_late_blight/Late_Blight (454).jpg,train/potato_late_blight/Late_Blight (452).jpg,train,5,TRUE,FALSE
+test/potato_late_blight/Late_Blight (506).jpg,train/potato_late_blight/Late_Blight (502).jpg,train,5,TRUE,FALSE
+test/rice_blast/IMG20201109195926_00.jpg,val/rice_blast/IMG20201109195914_00.jpg,val,5,TRUE,FALSE
+test/rice_blast/IMG_20231006_172429.jpg,train/rice_blast/RB_127.jpg,train,5,TRUE,FALSE
+test/rice_blast/IMG_20231014_172552_1.jpg,train/rice_blast/IMG_20231014_172552.jpg,train,5,TRUE,FALSE
+test/rice_blast/IMG_20231018_143336.jpg,train/rice_blast/IMG_20231018_143335.jpg,train,5,TRUE,FALSE
+test/rice_blast/IMG_20231018_143536.jpg,train/rice_blast/IMG_20231018_143539.jpg,train,5,TRUE,FALSE
+test/rice_blast/IMG_20231018_144339.jpg,train/rice_blast/IMG_20231018_144339_1.jpg,train,5,TRUE,FALSE
+test/rice_blast/IMG_20231018_144436_1.jpg,train/rice_blast/IMG_20231018_144435.jpg,train,5,TRUE,FALSE
+test/rice_blast/RB_111.jpg,train/rice_tungro_virus/RT_113.jpg,train,5,FALSE,FALSE
+test/rice_blast/RB_124.jpg,train/rice_tungro_virus/RT_144.jpg,train,5,FALSE,FALSE
+test/rice_blast/RB_92.jpg,train/rice_tungro_virus/RT_172.jpg,train,5,FALSE,FALSE
+test/rice_brown_spot/brownspot_orig_092.jpg,train/rice_brown_spot/brownspot_orig_066.jpg,train,5,TRUE,FALSE
+test/rice_sheath_blight/20241114_160924.jpg,val/rice_sheath_blight/20241114_162041.jpg,val,5,TRUE,FALSE
+test/rice_sheath_blight/20241114_161909.jpg,train/rice_healthy/Healthy_rice_leaf (35).jpg,train,5,FALSE,FALSE
+test/rice_sheath_blight/IMG_20231014_173807.jpg,train/rice_sheath_blight/IMG_20231014_173808.jpg,train,5,TRUE,FALSE
+test/rice_sheath_blight/IMG_20241114_150317.jpg,train/rice_sheath_blight/IMG_20241114_163448.jpg,train,5,TRUE,FALSE
+test/rice_tungro_virus/RT_158.jpg,val/rice_tungro_virus/RT_160.jpg,val,5,TRUE,FALSE
+test/rice_tungro_virus/RT_191.jpg,train/rice_tungro_virus/RT_125.jpg,train,5,TRUE,FALSE
+test/wheat_black_point/BlackPoint_124.jpg,train/wheat_black_point/BlackPoint_125.jpg,train,5,TRUE,FALSE
+test/wheat_black_point/BlackPoint_227.jpg,train/wheat_black_point/BlackPoint_182.jpg,train,5,TRUE,FALSE
+test/wheat_black_point/BlackPoint_31.jpg,val/wheat_black_point/BlackPoint_32.jpg,val,5,TRUE,FALSE
+test/wheat_black_point/BlackPoint_86.jpg,train/wheat_black_point/BlackPoint_87.jpg,train,5,TRUE,FALSE
+test/wheat_blast/WheatBlast_15.jpg,train/wheat_blast/WheatBlast_14.jpg,train,5,TRUE,FALSE
+test/wheat_blast/WheatBlast_150.jpg,train/wheat_blast/WheatBlast_152.jpg,train,5,TRUE,FALSE
+test/wheat_blast/WheatBlast_159.jpg,train/wheat_blast/WheatBlast_157.jpg,train,5,TRUE,FALSE
+test/wheat_blast/WheatBlast_322.jpg,val/wheat_blast/WheatBlast_321.jpg,val,5,TRUE,FALSE
+test/wheat_blast/WheatBlast_323.jpg,val/wheat_blast/WheatBlast_321.jpg,val,5,TRUE,FALSE
+test/wheat_fusarium_foot_rot/FusariumFootRot_88.jpg,train/wheat_fusarium_foot_rot/FusariumFootRot_91.jpg,train,5,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_17.jpg,train/wheat_leaf_blight/LeafBlight_15.jpg,train,5,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_222.jpg,val/wheat_leaf_blight/LeafBlight_223.jpg,val,5,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_234.jpg,train/wheat_leaf_blight/LeafBlight_233.jpg,train,5,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_288.jpg,train/wheat_leaf_blight/LeafBlight_289.jpg,train,5,TRUE,FALSE
+test/wheat_leaf_blight/LeafBlight_89.jpg,train/wheat_leaf_blight/LeafBlight_88.jpg,train,5,TRUE,FALSE

@@ -4,7 +4,7 @@ This repository contains the implementation and evaluation of my undergraduate t
 
 The main contribution is a **feature-level fusion model** that combines the internal feature representations learned by DenseNet121, MobileNetV2, and EfficientNetB0. On the thesis test set, this final model achieved **96.27% accuracy**, with **0.97 precision**, **0.96 recall**, and a **0.96 F1-score**.
 
-![Model accuracy comparison](Result%20Images/Accuracy_Comparison_Bar_Chart.png)
+![Model accuracy comparison](Result%20Images/accuracy_comparison_final.png)
 
 ## Project Overview
 

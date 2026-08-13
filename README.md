@@ -4,6 +4,8 @@ This repository contains the implementation and evaluation of my undergraduate t
 
 The main contribution is a **feature-level fusion model** that combines the internal feature representations learned by DenseNet121, MobileNetV2, and EfficientNetB0. On the thesis test set, this final model achieved **96.27% accuracy**, with **0.97 precision**, **0.96 recall**, and a **0.96 F1-score**.
 
+**Quick links:** [Final thesis PDF](docs/AI_Powered_Crop_Disease_Detection_Thesis.pdf) | [Dataset sources](DATASETS.md) | [Thesis source](thesis/) | [Methodological audit](AUDIT.md)
+
 ![Model accuracy comparison](Result%20Images/accuracy_comparison_final.png)
 
 ## Project Overview
@@ -25,9 +27,18 @@ Given a leaf image, the system:
 | **Rice** | Blast, Brown Spot, Healthy, Sheath Blight, Tungro Virus |
 | **Wheat** | Black Point, Blast, Fusarium Foot Rot, Healthy, Leaf Blight |
 
-## Dataset
+## Dataset and Sources
 
-The integrated dataset contains **6,551 field and uncontrolled-environment leaf images** collected from publicly available Kaggle and Mendeley Data sources. It was divided using a stratified **70% training, 15% validation, and 15% testing** split.
+The integrated dataset contains **6,551 field and uncontrolled-environment leaf images** selected from four publicly available Kaggle and Mendeley Data sources. The work did not introduce a single newly captured dataset; it created a standardized, multi-crop collection from existing public sources.
+
+| Original source | Platform | Link |
+|---|---|---|
+| Rice Leaf Diseases Dataset | Kaggle | [Dataset page](https://www.kaggle.com/datasets/alamshihab075/rice-leaf-disease-an-images-dataset) |
+| Paddy Disease Classification / Paddy Doctor | Kaggle | [Competition page](https://www.kaggle.com/competitions/paddy-disease-classification) |
+| Potato Leaf Disease Dataset in Uncontrolled Environment | Mendeley Data | [DOI 10.17632/ptz377bwb8.1](https://data.mendeley.com/datasets/ptz377bwb8/1) |
+| Disease Dataset of Wheat | Mendeley Data | [DOI 10.17632/5gc7hwydwg.1](https://data.mendeley.com/datasets/5gc7hwydwg/1) |
+
+See [`DATASETS.md`](DATASETS.md) for source provenance, selected classes, integration details, licensing guidance, and limitations. The integrated data was divided using a **70% training, 15% validation, and 15% testing** split.
 
 | Split | Images |
 |---|---:|
@@ -100,6 +111,10 @@ The best individual model was fine-tuned MobileNetV2 at 93.65%. The final featur
 |-- MasterDataset/                      # Train, validation, and test images
 |-- FinalModels/                        # Exported trained models
 |-- Result Images/                      # Performance charts and confusion matrices
+|-- docs/                               # Final thesis PDF
+|-- thesis/                             # Clean Overleaf/LaTeX thesis source
+|-- DATASETS.md                         # Original dataset links and provenance
+|-- requirements.txt                    # Python dependencies
 |-- check_setup.py                      # Environment verification script
 |-- AUDIT.md                            # Additional methodological review
 `-- README.md
@@ -126,6 +141,12 @@ A compatible environment can be created with:
 conda create -n crop-disease python=3.9
 conda activate crop-disease
 pip install "tensorflow<2.16" numpy pandas matplotlib seaborn scikit-learn opencv-python split-folders
+```
+
+Alternatively, install the included dependency list:
+
+```bash
+pip install -r requirements.txt
 ```
 
 Check the environment:
@@ -161,7 +182,7 @@ The table above reports the results presented in the final thesis evaluation. Fo
 
 **Title:** *AI-Powered Crop Disease Detection System for Sustainable Agriculture in Bangladesh*
 
-This repository accompanies the thesis and demonstrates how transfer learning and feature-level deep model fusion can be applied to multi-crop disease classification under locally relevant agricultural conditions.
+The [final thesis PDF](docs/AI_Powered_Crop_Disease_Detection_Thesis.pdf) and [clean LaTeX source](thesis/) are included in the repository. The thesis provides the complete research background, architecture, implementation, evaluation, standards, and conclusions behind the final notebooks and models.
 
 ## License
 

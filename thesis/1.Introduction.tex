@@ -1,0 +1,61 @@
+\chapter{Introduction}
+
+This chapter provides an overview of the proposed AI-powered crop disease detection system. It introduces the research background, motivation, objectives, overall methodology, expected outcomes, and organization of the thesis.
+
+%------------------------------------------------
+
+\section{Thesis/Project Overview}
+
+Agriculture is vital to the nation (accounting for about 11--12\% of Bangladeshi GDP and about one-third of total labor), so precise, timely diagnosis of plant disease directly affects both food security and farmer livelihoods. The top three most important economic crops in Bangladesh are rice, potato and wheat, all of which can be affected by a number of bacterial, fungal and viral diseases. These can lead to huge crop losses.
+
+Recent advances in Artificial Intelligence (AI), particularly Deep Learning-based image classification techniques, have created new opportunities for automated crop disease detection. While deep learning-based image classification has been widely applied to automate crop disease detection, the majority of existing systems are trained and evaluated on the PlantVillage dataset or similarly curated collections of images captured under clean, controlled, laboratory-like conditions. As established in Chapter 2, this creates a substantial gap between reported model accuracy and real-world reliability, since models trained purely on lab-condition images tend to generalize poorly to the cluttered backgrounds, variable lighting, and natural occlusion present in actual farm-field photographs.
+
+To bridge these gaps, this thesis will instead focus on developing and comparing integrated diagnostic architectures that move beyond the PlantVillage dataset. By sourcing field-conditioned images, consisting of 6,551 instances within 15 distinct disease categories across the crops of rice, potato and wheat, from multiple natural-image public datasets (Kaggle \& Mendeley Data). Three pre-trained CNN backbones: DenseNet121, MobileNetV2, and EfficientNetB0 will be assessed via a process of progressive experiments, including but not limited to, transfer-learning by feature extraction, by transfer-learning with fine-tuning, decision-fusion and features-fusion. Ultimately, the developed and demonstrated feature-based architecture, concatenating the inner-feature layers of three fine-tuned backbones simultaneously, will provide test accuracies of 96.27\%, significantly more than the decision based fusion alternative and either individual fine-tuned model.
+
+%------------------------------------------------
+
+\section{Motivation}
+
+Motivation and Contribution To explain why the present work was done, one recurrent bottleneck observed throughout the relevant literature (see Chapter 2, Section 2.2.2) should be noted: although some existing CNN-based crop disease detection methods have shown accuracy results exceeding 97\% for training datasets like the PlantVillage collection, these results simply don’t tell the full story of their real-world applicability since backgrounds are often very clean and shooting images were made in very staged manner and consequently represent only a fragment of what a real-world camera of a farmer is collecting. On the other hand, those studies that use either in-country/field data related to agriculture or specifically target a specific subset of the agricultural output are focused either on a single crop and a limited number of disease classes, therefore lacking an encompassing, field-verified unified disease detection framework.
+ 
+This project addresses this deficiency by building and evaluating a crop disease detection framework targeting these three most important local agricultural products and capable of processing real-field images collected in Bangladesh. A fully developed and evaluated framework that accurately captures numerous diseases for rice, potato, and wheat based on real field observations would provide significant practical benefit: increased ability for Bangladeshi farmers with limited or no access to extension and advisory services, a shift away from more qualitative (and therefore often prone to errors) visual assessment for determining disease level, and a groundwork that is theoretically extensible towards a deployable system on future mobile applications. Beside its immediate practical motivation, this endeavor is also driven by one unsolved technically challenging question arising from prior academic investigations into the field: Does leveraging an ensemble strategy that combines predictions from various CNN networks (ensemble at the decision layer) or from the lower level internal representation networks (ensemble at the feature layer), leads to superior predictive performance over an individualized CNN, on a localized field, real data collection covering diverse classes from multiple crop types, which this thesis directly explores.
+
+%------------------------------------------------
+
+\section{Objectives}
+
+The main objective of this research is to develop an AI-based crop disease detection system capable of accurately classifying multiple crop diseases using deep learning and ensemble learning techniques.
+
+The specific objectives of this work are:
+
+\begin{enumerate} \it
+    \item To construct an integrated, field-condition image dataset for rice, potato, and wheat disease classification by collecting and unifying multiple publicly available, locally relevant datasets, rather than relying on the PlantVillage dataset.
+    \item To develop and evaluate transfer learning and fine-tuned CNN models (DenseNet121, MobileNetV2, and EfficientNetB0) as individual baselines for crop disease classification on the integrated dataset.
+    \item To design and compare two ensemble strategies -- decision-level fusion and feature-level fusion -- of the three fine-tuned CNN backbones, and to identify which strategy yields superior classification performance on real field-condition data.
+    \item To evaluate all proposed models using standard classification metrics (accuracy, precision, recall, F1-score, and confusion matrices) on a held-out, unseen test set, and to identify the most effective overall architecture for Bangladeshi crop disease detection.
+\end{enumerate}
+%------------------------------------------------
+
+\section{Methodology}
+
+The methodology followed a progressive experimental design. First, an integrated dataset of 6,551 images across 15 disease classes (rice, potato, and wheat) was assembled from field-condition sources and organized into a unified directory structure. The dataset was split 70\%-15\%-15\% into training, validation, and test sets, with class-weighted balancing and real-time data augmentation applied during training to mitigate class imbalance and overfitting. Three pre-trained CNN backbones -- DenseNet121, MobileNetV2, and EfficientNetB0 -- were first trained as frozen feature extractors with a new classification head, then fine-tuned by partially unfreezing their upper convolutional layers. Building on the fine-tuned models, a decision-level fusion architecture combining the three models' prediction outputs and a feature-level fusion architecture combining their internal 256-dimensional compressed feature representations were developed and evaluated. All models were assessed on an identical, unseen 992-image test set using accuracy, precision, recall, F1-score, and confusion matrix analysis. Full architectural and implementation details are presented in Chapters 3 and 4.
+ 
+
+%------------------------------------------------
+
+\section{Thesis/Project Outcome}
+
+The outcomes achieved in this thesis/project are as follows:
+
+\begin{enumerate} \it
+    \item An integrated, field-condition dataset of 6,551 images across 15 disease classes for rice, potato, and wheat was successfully constructed, corresponding to Objective 1.
+    \item Transfer learning and fine-tuned versions of DenseNet121, MobileNetV2, and EfficientNetB0 were developed and evaluated, with fine-tuned MobileNetV2 achieving the best individual-model accuracy of 93.65\%, corresponding to Objective 2.
+    \item Both decision-level fusion (91.23\% accuracy) and feature-level fusion (96.27\% accuracy) architectures were developed and directly compared, revealing that feature-level fusion substantially outperforms decision-level fusion on this dataset, corresponding to Objective 3.
+    \item A comprehensive comparative evaluation across all six architectures was conducted using accuracy, precision, recall, F1-score, and confusion matrices, identifying feature-level fusion as the most effective architecture for Bangladeshi crop disease detection, corresponding to Objective 4.
+\end{enumerate}
+ 
+%------------------------------------------------
+
+\section{Organization of the Report}
+
+The remainder of this report is organized as follows. Chapter 2 presents the theoretical background of the project, reviews similar commercial applications and related academic research, and identifies the specific research gaps that motivate the proposed approach. Chapter 3 describes the system architecture and detailed methodology, covering requirement analysis, dataset collection and integration, preprocessing and augmentation, and the design of the transfer learning, fine-tuning, decision-level fusion, and feature-level fusion models. Chapter 4 presents the implementation details, experimental setup, and results of all four proposed methodologies, along with a comparative performance analysis. Finally, the report concludes with a discussion of the findings, their implications, limitations of the current work, and directions for future research.

@@ -1,0 +1,166 @@
+\chapter{Background}
+This chapter presents the theoretical background and existing research related to AI-based crop disease detection. It introduces the fundamental concepts, reviews similar applications and recent research works, and identifies the research gaps that motivate the proposed methodology.
+
+%------------------------------------------------
+\section{Preliminaries}
+
+Artificial Intelligence has become one of the most influential technologies in modern agriculture by enabling automated monitoring, disease diagnosis, and decision support systems. Among the various AI techniques, Deep Learning has demonstrated remarkable performance in image classification tasks due to its ability to automatically learn hierarchical feature representations directly from raw images. Consequently, deep learning has become the dominant approach for plant disease recognition using leaf images.
+
+
+\subsection{Crop Diseases and Their Impact}
+Crop diseases caused by fungal, bacterial, and viral pathogens are among the most persistent threats to global food security, often reducing yield and quality before visible symptoms are severe enough for farmers to intervene in time. Early and accurate identification of the disease type is therefore a critical first step in any crop protection strategy, as different diseases require different treatments, and misdiagnosis can lead to unnecessary pesticide use or continued crop loss.
+ 
+\subsection{Agriculture in Bangladesh}
+Agriculture remains a cornerstone of the Bangladeshi economy, contributing approximately 11--12\% of the national GDP and employing around a third of the country's workforce, making it the single largest employment sector in the country \cite{worldbank_bd_agri}. Rice, potato, and wheat are among the most economically significant crops cultivated in Bangladesh, with the country ranking as the third-largest rice producer in the world \cite{agri_bd_wiki}. Given this dependence, disease outbreaks in these staple crops can have an outsized effect on both household food security and the broader national economy, which underscores the practical importance of accessible, automated disease detection tools tailored to local growing conditions.
+ 
+
+
+\subsection{Artificial Intelligence and Deep Learning}
+Artificial Intelligence refers to computer systems capable of performing tasks that normally require human intelligence, such as learning, reasoning, decision making, and pattern recognition. Deep Learning is a specialized branch of machine learning that utilizes multiple layers of artificial neural networks to learn complex representations from large datasets.
+
+Unlike traditional machine learning approaches that require manual feature engineering, deep learning models automatically learn discriminative features directly from image data. This capability makes deep learning particularly suitable for agricultural image analysis, where disease symptoms often vary in color, texture, shape, and lighting conditions.
+
+\subsection{Artificial Intelligence in Agriculture}
+Artificial Intelligence, and particularly computer vision, has emerged as a practical tool for automating tasks that traditionally required expert agronomists physically inspecting fields. AI-based crop monitoring systems can process leaf images captured on an ordinary smartphone and return a diagnosis within seconds, making expert-level disease identification accessible to smallholder farmers who may not have access to agricultural extension services.
+
+\subsection{Convolutional Neural Networks}
+
+Convolutional Neural Networks (CNNs) are a class of deep learning models specifically designed for image processing and computer vision tasks. CNNs learn spatial features through convolution operations and gradually extract increasingly complex representations of an image.
+
+A typical CNN consists of several fundamental layers:
+
+\begin{itemize}
+    \item \textbf{Convolution Layer:} Extracts local image features such as edges, textures, and disease patterns.
+    \item \textbf{Activation Function:} Introduces non-linearity, commonly using the Rectified Linear Unit (ReLU).
+    \item \textbf{Pooling Layer:} Reduces the spatial dimensions of feature maps while preserving important information.
+    \item \textbf{Fully Connected Layer:} Combines the extracted features to perform the final classification.
+    \item \textbf{Softmax Layer:} Produces the probability distribution over all output classes.
+\end{itemize}
+
+The hierarchical learning capability of CNNs enables them to identify subtle visual symptoms of plant diseases with high accuracy.
+
+\subsection{Transfer Learning}
+
+Training deep neural networks from scratch generally requires millions of labeled images and substantial computational resources. Transfer learning addresses this limitation by utilizing models that have already been trained on large-scale datasets such as ImageNet.
+
+Instead of learning all image features from the beginning, transfer learning reuses the knowledge acquired from the source dataset and adapts it to a new classification task. This approach significantly reduces training time, improves convergence, and generally produces better performance when only a limited amount of domain-specific data is available.
+
+In this research, three pre-trained CNN architectures were employed through transfer learning: DenseNet121, MobileNetV2, and EfficientNetB0.
+
+\subsection{Feature Extraction and Fine-Tuning}
+
+Transfer learning can generally be implemented using two strategies.
+
+\textbf{Feature Extraction} keeps the pre-trained backbone completely frozen while replacing the original classification layer with a new classifier designed for the target dataset. Only the newly added classification layers are trained.
+
+\textbf{Fine-Tuning} extends feature extraction by unfreezing selected higher layers of the pre-trained network and retraining them using a very small learning rate. This enables the model to adapt its high-level features to the target dataset while preserving the general visual knowledge learned from ImageNet.
+
+\subsection{Ensemble Learning}
+
+Ensemble learning combines multiple machine learning models to produce a prediction that is generally more accurate and robust than that of an individual model. Since different CNN architectures learn different feature representations, combining their knowledge often improves overall classification performance.
+
+Two ensemble strategies are considered in this research.
+
+\begin{itemize}
+    \item \textbf{Decision-Level Fusion:} Combines the prediction outputs of multiple CNN models using a fusion classifier to generate the final decision.
+    \item \textbf{Feature-Level Fusion:} Combines deep feature representations extracted from multiple CNN models before performing the final classification.
+\end{itemize}
+
+Both approaches aim to exploit the complementary strengths of multiple deep learning architectures to improve crop disease classification accuracy.
+
+\subsection{Performance Evaluation Metrics}
+
+The effectiveness of the developed models is evaluated using standard multi-class classification metrics, including Accuracy, Precision, Recall, and F1-score. In addition, Confusion Matrices are used to visualize the classification performance of each model across all disease categories.
+
+These metrics provide a comprehensive evaluation by measuring both the overall classification performance and the model's effectiveness on individual disease classes.
+
+%------------------------------------------------
+\section{Literature Review}
+
+\subsection{Similar Applications}
+
+\subsubsection{Plantix}
+Plantix is a widely used mobile application, developed by PEAT GmbH, that uses deep learning-based image recognition to diagnose more than 800 pest, disease, and nutrient-deficiency symptoms across around 60 crop types \cite{plantix_gsma}. Farmers photograph an affected plant, and the app returns a diagnosis along with treatment recommendations within seconds, drawing on a database built from over a hundred million farmer-submitted images \cite{plantix_gsma}. While Plantix demonstrates the practical viability of smartphone-based disease diagnosis at scale, it is a closed commercial system whose underlying models and training data are not publicly available, and its accuracy for the specific crop varieties and disease presentations found in Bangladesh has not been independently verified.
+
+\subsubsection{PlantVillage}
+PlantVillage, based at Pennsylvania State University, is both a widely used public image dataset and the research platform behind several AI-based diagnostic tools. The PlantVillage dataset itself, consisting of tens of thousands of leaf images captured under controlled laboratory conditions, has become the de facto benchmark for plant disease classification research; however, its clean backgrounds and staged photography conditions are widely acknowledged to limit real-world generalizability, which is a central motivation for the present study's use of field-condition, locally sourced data instead.
+
+\subsubsection{Nuru}
+Nuru is an offline, smartphone-based AI assistant built by the PlantVillage team that diagnoses cassava diseases directly on-device using a CNN, without requiring an internet connection \cite{nuru_cgiar}. In field trials, Nuru was reported to be roughly twice as accurate as human extension workers at identifying cassava disease symptoms \cite{nuru_cgiar}. Nuru's offline-first design and its later expansion to additional crops such as maize and potato \cite{nuru_psu} demonstrate the practical value of lightweight, deployable models for smallholder farmers in regions with limited connectivity -- a consideration directly relevant to any real-world deployment of the system proposed in this thesis within rural Bangladesh.
+
+\subsubsection{Other Applications}
+Beyond Plantix and Nuru, a number of other diagnosis platforms exist internationally, such as Agrio, which combines camera-based scans with satellite imagery for larger-scale farm monitoring. However, none of these applications are trained specifically on, or validated against, Bangladeshi field data for rice, potato, and wheat, which is the specific gap this thesis addresses.
+
+\subsection{Related Research}
+
+Table~\ref{tab:related_research} summarizes fifteen studies relevant to CNN-based crop disease classification, spanning global benchmark datasets, ensemble/fusion methods, and Bangladesh-specific work.
+
+{
+\small
+\begin{longtable}{|c|p{2.6cm}|p{3.4cm}|p{3.2cm}|p{3.4cm}|}
+\caption{Summary of related research on CNN-based crop disease detection.}
+
+\label{tab:related_research} \\
+
+% --- FIRST PAGE HEADER ---
+\hline
+\textbf{Ref.} & \textbf{Authors \& Year} & \textbf{Method} & \textbf{Key Outcome} & \textbf{Limitations} \\ \hline
+\endfirsthead
+
+% --- SECOND PAGE HEADER (Repeats at top of next page) ---
+\multicolumn{5}{c}{{\bfseries Table \thetable\ -- continued from previous page}} \\
+\hline
+\textbf{Ref.} & \textbf{Authors \& Year} & \textbf{Method} & \textbf{Key Outcome} & \textbf{Limitations} \\ \hline
+\endhead
+
+
+% --- BOTTOM OF LAST PAGE FOOTER ---
+\hline
+\endlastfoot
+
+% --- TABLE DATA BEGINS HERE ---
+\cite{islam2020potato} & Islam et al., 2020 & Transfer learning (VGG16/19, ResNet50, InceptionV3) on PlantVillage & VGG16: 99.43\% on potato diseases & Clean PlantVillage images; may not generalize to field conditions \\ \hline
+\cite{uddin2021jute} & Uddin et al., 2021 & Custom lightweight 4-layer CNN on own BD jute dataset (4,740 images) & 96.0\% avg. accuracy (Yellow Mosaic, Powdery Mildew, Healthy) & Limited to 2 diseases; slightly below transfer learning models \\ \hline
+\cite{himel2022bdcrops} & Himel et al., 2022 & Comparative analysis of 6 CNNs on BD major crops (Corn, Potato, Rice, Wheat) & DenseNet201 best for Potato (98.55\%); MobileNetV2 best for Wheat (98.28\%) & Relies on public datasets (e.g. PlantVillage); limited real BD field data \\ \hline
+\cite{chowdhury2023lightweight} & Chowdhury et al., 2023 & Lightweight EfficientNet-B4 on PlantVillage & 99.97\% accuracy, few parameters & Trained on lab-condition PlantVillage images \\ \hline
+\cite{ferentinos2018deep} & Ferentinos, 2018 & CNNs (AlexNet, GoogleNet, VGG) on $\sim$87,000 images, 25 species, 58 classes & Up to 99.53\% accuracy & Mostly controlled-condition images; lacks real-field variability \\ \hline
+\cite{ahad2023rice} & Ahad et al., 2023 & 6 CNNs (DenseNet121, InceptionV3, MobileNetV2, ResNeXt101, ResNet152V2, SEResNeXt101) + DEX ensemble on 9 BD rice diseases & Ensemble (DEX): 98\% accuracy; TL improved SEResNeXt101 by 17\% & Ensemble limited to decision-level combination of three models \\ \hline
+\cite{mehnaz2025dhanshomadhan} & Mehnaz \& Islam, 2025 & CNN vs. Vision Transformer vs. SVM on Bangladeshi rice leaf dataset (Dhan-Shomadhan) & ResNet50 best among CNN/ViT/SVM models & Single-crop (rice) focus; small BD-specific dataset \\ \hline
+\cite{ricepaddy_efficientnetb3_maskrcnn} & (Rice paddy BD study) & EfficientNetB3 classification + Mask R-CNN segmentation on BD rice paddy images & $\sim$99\% classification accuracy; $\sim$89\% segmentation mAP & Adds segmentation complexity not always feasible on-device \\ \hline
+\cite{alhammad2025potatoxai} & Alhammad et al., 2025 & Customized VGG16 + Grad-CAM Explainable AI on PlantVillage potato & 98\% test accuracy & PlantVillage only; no field validation \\ \hline
+\cite{ensemble_featurefusion_2025} & (Ensemble feature fusion study), 2025 & VGG16 + ResNet50 + InceptionV3 feature concatenation for plant disease classification & 97.0\% accuracy (feature-level fusion) & Evaluated on public datasets, not local field data \\ \hline
+\cite{catalreis2022wheat} & Catal Reis \& Turk, 2022 & Integrated Deep Learning Framework (IDLF) + ensemble learning for wheat disease & Ensemble outperformed individual pre-trained/from-scratch models & High architectural complexity; 13 models compared, not deployment-optimized \\ \hline
+\cite{multiscale_wheat_fusion_2025} & (Multi-scale wheat fusion study), 2025 & Xception, InceptionV3, ResNet50 features fused + voting/stacking classifiers & Stacking classifier: 98.1--100\% accuracy & Feature fusion combined with classical ML, not end-to-end deep fusion \\ \hline
+\cite{glnet2024wheat} & (GLNet study), 2024 & Global-local feature fusion network for wheat leaf disease & Improved accuracy via multi-scale feature fusion & Single-crop (wheat) scope \\ \hline
+\cite{leaffusionnet2026} & (LeafFusionNet study), 2026 & CNN + Vision Transformer + attention module (LeafTAM) fusion & 85.31\% across 14 classes, 17,430 images (regional dataset) & Lower accuracy than simpler fusion approaches; higher architectural complexity \\ \hline
+\cite{vcnet_rice} & (VCNet study) & Shallow CNN with deep feature extraction + genetic algorithm optimization for rice disease & Reduced computational load while maintaining performance & Still limited by dataset availability for rare disease classes \\ \hline
+\end{longtable}
+}
+
+\textit{Note: A handful of entries (marked in \texttt{references\_to\_add.bib}) have author lists that could not be fully verified from available sources and should be double-checked against the original papers before submission.}
+
+A clear pattern emerges from Table~\ref{tab:related_research}. First, most reported accuracies above 97\% \cite{islam2020potato,chowdhury2023lightweight,ferentinos2018deep,alhammad2025potatoxai} were obtained on the PlantVillage dataset or similarly curated, laboratory-condition image collections, and several of the source studies explicitly note that this limits generalization to real, uncontrolled field images. Second, the handful of Bangladesh-specific studies \cite{uddin2021jute,himel2022bdcrops,ahad2023rice,mehnaz2025dhanshomadhan,ricepaddy_efficientnetb3_maskrcnn} tend to focus on a single crop or a narrow set of disease classes, and where multiple crops are covered, the underlying data is still often drawn from public, non-field-condition sources. Third, among ensemble approaches, decision-level combination methods \cite{ahad2023rice,catalreis2022wheat,multiscale_wheat_fusion_2025} generally produced solid but incremental gains over single fine-tuned models, whereas studies exploring feature-level fusion \cite{ensemble_featurefusion_2025,glnet2024wheat} reported comparatively larger improvements, aligning with the internal findings of this thesis regarding the relative strength of feature-level over decision-level fusion.
+
+%------------------------------------------------
+\section{Gap Analysis}
+
+Table~\ref{tab:gap_analysis} summarizes the key limitations identified in the reviewed literature and how the proposed system addresses each of them.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3.2cm}|p{3.6cm}|p{3.4cm}|p{3.6cm}|}
+\hline
+\textbf{Existing Work} & \textbf{Limitations} & \textbf{Identified Gap} & \textbf{Proposed Solution} \\ \hline
+PlantVillage-based studies (e.g. \cite{islam2020potato,chowdhury2023lightweight,ferentinos2018deep,alhammad2025potatoxai}) & Trained/evaluated on clean, lab-condition images & Weak generalization to real farm-field images with natural backgrounds, lighting, and occlusion & Integrated dataset assembled entirely from natural/field-condition BD sources (Section 3.2) \\ \hline
+BD-specific single-crop or single-disease studies (e.g. \cite{uddin2021jute,mehnaz2025dhanshomadhan}) & Narrow disease/crop coverage & No unified system across multiple economically important BD crops & Unified 15-class system covering rice, potato, and wheat simultaneously \\ \hline
+Multi-crop BD comparative studies (e.g. \cite{himel2022bdcrops,ahad2023rice}) & Still partly reliant on public/PlantVillage-style data; decision-level ensembles only & Limited exploration of feature-level fusion for BD crop diseases specifically & Both decision-level and feature-level fusion evaluated and directly compared \\ \hline
+General ensemble/fusion literature (e.g. \cite{ensemble_featurefusion_2025,catalreis2022wheat,multiscale_wheat_fusion_2025,glnet2024wheat,leaffusionnet2026}) & Fusion approaches validated on public benchmark datasets, not local field data & Unclear whether feature-level fusion advantages hold for locally sourced, mixed-source BD datasets & Feature-level fusion (DenseNet121 + MobileNetV2 + EfficientNetB0) validated on the integrated 6,551-image BD dataset, achieving 96.27\% accuracy \\ \hline
+\end{tabular}
+\caption{Gap analysis summarizing limitations of existing work and the proposed solution.}
+\label{tab:gap_analysis}
+\end{table}
+
+%------------------------------------------------
+\section{Summary}
+
+This chapter established the theoretical foundation for the proposed system, covering the essential concepts of deep learning, convolutional neural networks, transfer learning, and ensemble learning that underpin the methodology presented in later chapters. It then reviewed existing commercial applications -- Plantix, PlantVillage, and Nuru -- as well as fifteen relevant research studies spanning both global benchmark work and Bangladesh-specific efforts. The review revealed a consistent pattern: high reported accuracies are frequently tied to clean, laboratory-condition datasets such as PlantVillage, while Bangladesh-specific studies tend to be narrow in crop or disease scope. Building on this analysis, a gap analysis was presented identifying the specific shortcomings this thesis addresses -- namely, the lack of a unified, field-condition, multi-crop (rice, potato, wheat) disease detection system for Bangladesh that directly compares decision-level and feature-level fusion strategies. This gap directly motivates the methodology and system architecture presented in the following chapter.

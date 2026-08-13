@@ -1,0 +1,41 @@
+\chapter{Conclusion}
+
+This chapter summarizes the overall contributions of the proposed research, discusses the limitations encountered during the development process, and outlines potential directions for future improvements and research.
+
+\section{Summary}
+
+The presented study proposes an AI based on a supervised machine learning system for the identification of plant diseases in rice, wheat and potatoes, being them three important plants crops in the economy of Bangladesh. A single dataset of 6551 images classified in 15 diseases groups was created by concatenating several well known and publically available plant diseases dataset available for public use. After pre-processing and data augmentations 4 different deep learning methods were used and assessed: Transfer Learning (as Feature Extraction), as Fine-Tuning as Decision-Level Fusion and Feature-Level Fusion.
+
+Three pre-trained convolutional neural network architectures, namely DenseNet121, MobileNetV2, and EfficientNetB0, were used as the backbone models throughout the experiments. Their performances were systematically compared using standard evaluation metrics, including Accuracy, Precision, Recall, F1-score, and Confusion Matrix.
+
+From the analysed models Feature-Level Fusion model acquired better results from the entire set of methods under study. The accuracy achieved on the unseen test set using this technique was 96.27\%. It was evident from experimental result which shown that a significant gain on classification ability obtained by the fusion of correlated deep features which are extracted using different CNN model approaches; as opposed to use solely single features of transfer learned and fine-tuned models.
+
+In conclusion, this article propose efficient methodology on the use of computational approach which used ensemble of DL methods to classify the crop plants as accurate and scalable in automatic disease detection system, and indicates the usefulness of using an ensemble of deep learning approach.
+
+\section{Limitation}
+
+Although the proposed system achieved promising performance, several limitations remain.
+
+The experiments were conducted using publicly available datasets rather than images collected directly from Bangladeshi farmers under diverse real-world field conditions. Consequently, variations in lighting, background complexity, camera quality, and environmental conditions may affect the model's performance during practical deployment.
+
+In addition, the proposed system is currently limited to three crop types and fifteen disease classes. Diseases outside these predefined categories cannot be recognized by the model. Furthermore, the current implementation focuses on image classification only and does not provide disease severity estimation, treatment recommendations, or real-time field diagnosis.
+
+Finally, the experiments were performed using consumer-grade hardware, which limited the exploration of larger deep learning architectures and more computationally intensive training strategies.
+
+\section{Future Work}
+
+Although the proposed feature-level fusion model achieved excellent classification performance, several improvements can be explored in future research to increase its practical applicability and real-world impact.
+
+\begin{itemize}
+    \item \textbf{Mobile Application Development:} The proposed model can be integrated into a lightweight Android application that enables farmers to capture crop leaf images using a smartphone and instantly receive disease diagnosis and management recommendations. The application should be optimized to run efficiently on low-cost Android devices commonly used by farmers in rural Bangladesh.
+
+    \item \textbf{Offline Inference:} The trained model can be converted into TensorFlow Lite (TFLite) format to support offline prediction without requiring an internet connection. This would make the system accessible in remote agricultural areas where network connectivity is limited.
+
+    \item \textbf{Expansion of Crop Categories:} Future work may extend the current system by incorporating additional economically important crops such as maize, tomato, eggplant, and vegetables, together with a wider variety of disease classes.
+
+    \item \textbf{Larger and More Diverse Dataset:} Collecting additional field images from different geographical regions, lighting conditions, seasons, and camera devices would further improve the robustness and generalization capability of the proposed model.
+
+    \item \textbf{Real-Time Field Deployment:} The developed application can be integrated with cloud services to provide real-time disease monitoring, automatic model updates, and centralized agricultural data analysis for researchers and agricultural extension services.
+
+    \item \textbf{Disease Severity Estimation and Treatment Recommendation:} Beyond disease classification, future versions of the system may estimate the severity of infection and recommend appropriate pesticides, fertilizers, or cultivation practices to assist farmers in making informed decisions.
+\end{itemize}
